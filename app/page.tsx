@@ -87,11 +87,11 @@ export default function Home() {
                         onChange={(e) => setSelectedHashtag(e.target.value)}
                         className="border border-gray-300 rounded px-4 py-2 text-gray-700"
                     >
-                        <option value="nopole">nopole</option>
-                        <option value="itsokimok">itsokimok</option>
+                        {/* <option value="nopole">nopole</option> */}
+                        {/* <option value="itsokimok">itsokimok</option> */}
                         <option value="arcane">arcane</option>
                         <option value="games">pubg</option>
-                        <option value="badgirlslikeyou">bad girls like you</option>
+                        {/* <option value="badgirlslikeyou">bad girls like you</option> */}
                     </select>
                     <button
                         onClick={() => {
