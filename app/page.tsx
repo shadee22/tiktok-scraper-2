@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ClipLoader } from "react-spinners";
 
+
 interface Video {
     video: {
         duration: number;
