@@ -20,7 +20,7 @@ interface TikTokApiResponse {
 }
 
 export default function Home() {
-    const [hashtag, setHashtag] = useState<string>("nopole");
+    const [hashtag, setHashtag] = useState<string>("arcane");
     const [cursor, setCursor] = useState<number>(0);
     const [videos, setVideos] = useState<Video[]>([]);
     const [status, setStatus] = useState<string>("Click 'Fetch Data' to load the API response...");
@@ -34,7 +34,7 @@ export default function Home() {
         }
 
         setLoading(true);
-        if (!isLoadMore) setShowLoadMore(false); // Hide "Load More" for new searches
+        if (!isLoadMore) setShowLoadMore(false);
         setStatus("Fetching data...");
         const apiUrl = `/api/tiktok?name=${hashtag}&cursor=${cursor}`;
 
